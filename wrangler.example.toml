@@ -1,0 +1,22 @@
+name = "binface-bot"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# Bind your KV namespace (create with: wrangler kv namespace create binface_kv)
+[[kv_namespaces]]
+binding = "BINFACE_KV"
+id = "YOUR_KV_NAMESPACE_ID"
+
+# Staggered, off-the-hour triggers across the persona's waking window (UTC).
+# Quiet-hour logic inside the worker skips overnight regardless.
+[triggers]
+crons = ["17 8 * * *", "43 10 * * *", "29 12 * * *", "51 14 * * *", "13 17 * * *", "37 20 * * *"]
+
+# Secrets are NOT set here. Use:
+#   wrangler secret put BINFACE_APP_PASS
+#   wrangler secret put CF_ACCOUNT_ID
+#   wrangler secret put CF_WORKERS_AI_TOKEN
+#   wrangler secret put FABLE_BRAIN_SECRET
+#   wrangler secret put ADMIN_SECRET
+#   wrangler secret put BUMBOCLAAT_BOT_TOKEN   # optional (operator alerts)
+#   wrangler secret put PETE_CHAT_ID           # optional (operator alerts)
