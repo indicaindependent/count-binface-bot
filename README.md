@@ -1,4 +1,4 @@
-# 🗑️ Count Binface Bot
+# Count Binface Bot
 
 An autonomous, news-aware, **humanized** Bluesky bot for a UK satirical political campaign persona — built entirely on the free Cloudflare edge.
 
@@ -8,7 +8,7 @@ Live account: [@countbinface.osintnet.uk](https://bsky.app/profile/countbinface.
 
 ---
 
-## ✨ What makes it interesting
+## What makes it interesting
 
 | Capability | How |
 |---|---|
@@ -21,7 +21,7 @@ Live account: [@countbinface.osintnet.uk](https://bsky.app/profile/countbinface.
 
 ---
 
-## 🧠 The humanized-engagement philosophy
+## The humanized-engagement philosophy
 
 Most bots are caught because they act **instantly**, on a **fixed interval**, and **reply to everything**. This bot does the opposite — the design principle is **latency + restraint**:
 
@@ -37,7 +37,7 @@ See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the full breakdown.
 
 ---
 
-## 🚀 Quick start
+## Quick start
 
 1. Create a Bluesky account for your persona and generate an **app password**.
 2. Create a Cloudflare Worker + a KV namespace.
@@ -62,7 +62,7 @@ See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the full breakdown.
 
 ---
 
-## 🔌 Endpoints
+## Endpoints
 
 | Route | Auth | Does |
 |---|---|---|
@@ -78,7 +78,7 @@ Admin routes require `?k=ADMIN_SECRET` or an `x-admin` header.
 
 ---
 
-## ⚖️ Ethics & compliance
+## Ethics & compliance
 
 - **Self-labelled parody.** The account states it is a satire/parody tribute in its bio.
 - **Punches up, never down.** The persona prompt forbids targeting vulnerable people.
@@ -94,11 +94,11 @@ MIT — see [LICENSE](LICENSE).
 
 ---
 
-## ⚡ Support the Mission
+## Support the Mission
 
 This is free, ad-free, independent infrastructure — no VC, no gov funding, no strings. If it served you, a tip keeps it alive and funds the next tool.
 
 [![Donate via SkyGive](https://img.shields.io/badge/Donate_via_SkyGive-8A5CF6?style=for-the-badge&logoColor=white)](https://donate.skygive.app/)
 [![Lightning](https://img.shields.io/badge/tips@skygive.app-F7931A?style=for-the-badge&logo=lightning&logoColor=white)](https://donate.skygive.app/)
 
-<sub>🧡 Sovereign Lightning + on-chain via SkyGive. Your sats fund uptime, not ads.</sub>
+<sub> Sovereign Lightning + on-chain via SkyGive. Your sats fund uptime, not ads.</sub>
